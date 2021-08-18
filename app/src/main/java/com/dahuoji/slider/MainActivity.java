@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         FragmentAdapter fragmentAdapter = new FragmentAdapter(getSupportFragmentManager(), fragmentList);
         viewPager.setAdapter(fragmentAdapter);
         //指示器有两种动画效果可选 SliderView.ANIMATION_NORMAL 和 SliderView.ANIMATION_SPREAD
-        //sliderView.bindViewPager(viewPager, SliderView.ANIMATION_NORMAL);
-        sliderView.bindViewPager(viewPager, SliderView.ANIMATION_SPREAD);
+        sliderView.bindViewPager(viewPager, SliderView.ANIMATION_NORMAL);
+        //sliderView.bindViewPager(viewPager, SliderView.ANIMATION_SPREAD);
         //fragmentList的数量是4个,所以需要4个标题,要对应
         sliderView.refreshData(new String[]{"标题一", "标题二", "标题三", "title4"}, 50, Color.BLACK);
     }
